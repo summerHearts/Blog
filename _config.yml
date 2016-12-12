@@ -12,7 +12,7 @@ avatar: css/images/avatar.jpg
 location: 'Shanxi, China'
 follow: https://github.com/deffyc
 email: # Your email (Used to show Gravatar).
-language: zh-CN
+language: en
 timezone:
 since: 2000 # The start year showing in your copyright section.
 
