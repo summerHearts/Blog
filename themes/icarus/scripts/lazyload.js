@@ -1,6 +1,6 @@
 'use strict';
 var cheerio = require('cheerio');
-var cdnUrl = "https://youcdndomain.com";
+var cdnUrl = "blogccsyuecom.b0.upaiyun.com";
 var loading = "/images/loading.gif";
 var oldsrc = '';
 function stringStartsWith(string, prefix) {
