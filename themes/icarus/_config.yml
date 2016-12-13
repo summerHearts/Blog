@@ -17,7 +17,7 @@ customize:
         enabled: true # Whether to show profile bar
         avatar: images/avatar.jpg
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: deffyc
+        author: 侯杰
         author_title: study & work
         location: ShanXi, China
         follow: https://github.com/deffyc
