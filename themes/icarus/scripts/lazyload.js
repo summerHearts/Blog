@@ -1,8 +1,10 @@
 'use strict';
 var cheerio = require('cheerio');
-var cdnUrl = "blogccsyuecom.b0.upaiyun.com";
+var cdnUrl = "http://blogstatic.ccsyue.com";
+var baseUrl = 'http://blog.ccsyue.com';
 var loading = "/images/loading.gif";
 var oldsrc = '';
+
 function stringStartsWith(string, prefix) {
     return string.slice(0, prefix.length) == prefix;
 }
