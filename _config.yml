@@ -12,9 +12,9 @@ avatar: css/images/avatar.jpg
 location: 'Shanxi, China'
 follow: https://github.com/deffyc
 email: # Your email (Used to show Gravatar).
-language: en
+language: zh-CN
 timezone:
-since: 2000 # The start year showing in your copyright section.
+since: 2012 # The start year showing in your copyright section.
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
