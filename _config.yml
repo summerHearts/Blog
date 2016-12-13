@@ -5,7 +5,7 @@
 # Site
 title: 侯杰的博客
 subtitle:
-description: 留意学习生活
+description: 坚持把简单的事情做好就是不简单，坚持把平凡的事情做好就是不平凡。所谓成功，就是在平凡中做出不平凡的坚持。
 author: 侯杰
 author_title: '图书馆里的学习生涯'
 avatar: css/images/avatar.jpg
@@ -18,7 +18,7 @@ since: 2012 # The start year showing in your copyright section.
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://deffyc.github.io/
+url: http://blog.ccsyue.com/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
