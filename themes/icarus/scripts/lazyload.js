@@ -6,7 +6,6 @@ var loading = "/images/loading.gif";
 var oldsrc = '';
 
 function stringStartsWith(string, prefix) {
-	if(string.slice(0,1)=="\") string=baseUrl+string;
     return string.slice(0, prefix.length) == prefix;
 }
 function lazyloadImg(source) {
