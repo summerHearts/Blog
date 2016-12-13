@@ -14,17 +14,13 @@ function lazyloadImg(source) {
     });
     $('img').each(function(index, element) {
         oldsrc = $(element).attr('src');
-        /*if (oldsrc && !stringStartsWith(oldsrc, baseUrl) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
+        if (oldsrc && !stringStartsWith(oldsrc, baseUrl) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
             $(element).addClass('hx_lazyimg');
             $(element).attr({
                 src: loading,
                 'data-original': cdnUrl + oldsrc
             });
-        }*/
-		if (oldsrc && !stringStartsWith(oldsrc, baseUrl)) {
-            $(element).attr({
-                src: cdnUrl + oldsrc
-        });
+        }
     });
     return $.html();
 }
