@@ -18,11 +18,12 @@ function lazyloadImg(source) {
             $(element).addClass('hx_lazyimg');
             $(element).attr({
                 src: loading,
-                'data-original': cdnUrl + oldsrc
+                'data-original': cdnUrl + oldsrc +"-Watermark"
             });
 			
         }
     });
+	$('script')
     return $.html();
 }
 hexo.extend.filter.register('after_render:html', lazyloadImg);
