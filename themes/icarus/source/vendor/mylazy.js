@@ -46,8 +46,8 @@ jQuery(function($) {
                         loaded_inds.push(ind);
                         var _img = _lazyimgs.eq(ind);
                         _img.attr("src", _img.attr(attrName)).css("background-image", "none").attr("lazyloadpass", "1");
-						if(_img.parent().tagName="A" && _img.parent().attr("href").indexOf("loading.gif")!=0){
-							//_img.parent().attr("href",_img.attr(attrName));
+						if(_img.parent().tagName="A" && _img.parent().attr("href").indexOf("loading.gif")>0){
+							_img.parent().attr("href",_img.attr(attrName));
 						}
                     }).bind("error", function() {
                         var ind = $(this).attr("ind");
