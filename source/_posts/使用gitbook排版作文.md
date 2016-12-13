@@ -8,7 +8,7 @@ category: gitbook笔记
 > 插件帮不上啥忙，还得改源代码。需求格式：
 
 
-![格式需求](images/2016/12/gitbook-demo.png)
+![格式需求](/images/2016/12/gitbook-demo.png)
 
 推荐入门教程：[GitBook的安装配置](http://gitbook.zhangjikai.com/commands.html)
 
