@@ -16,10 +16,10 @@
             selector: '.gallery-item',
         };
         $('.article-entry').each(function(i) {
-            lightGallery($(this),options);
+            lightGallery(this,options);
         });
         $('.article-gallery').each(function(i) {
-            lightGallery($(this),options);
+            lightGallery(this,options);
         });
         //lightGallery($('.article-entry')[0], options);
         //lightGallery($('.article-gallery')[0], options);
