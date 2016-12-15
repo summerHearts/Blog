@@ -14,7 +14,7 @@ install:
 script:
   - hexo generate
 after_script:
-  - mv ./source/_posts/images ./source/ -f
+  - mv ./source/_posts/images ./public/ -f
   - cd ./public
   - git init
   - git config user.name "${USER_NAME}"
