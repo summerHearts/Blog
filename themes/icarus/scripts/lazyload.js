@@ -1,7 +1,7 @@
 'use strict';
 var cheerio = require('cheerio');
 var cdnUrl = "http://blogstatic.ccsyue.com";
-var baseUrl = 'http://';
+var baseUrl = '/';
 var loading = "/images/loading.gif";
 var oldsrc = '';
 
@@ -17,7 +17,7 @@ function lazyloadImg(source) {
 	if(stringStartsWith(oldsrc, './images')){
 	    oldsrc="/" + oldsrc.substr(1);	
 	}
-        if (oldsrc && (!stringStartsWith(oldsrc, baseUrl) || !stringStartsWith(oldsrc, '/')) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
+        if (oldsrc && stringStartsWith(oldsrc, baseUrl)  && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
 	    $(element).addClass('hx_lazyimg');
             $(element).attr({
                 src: loading,
