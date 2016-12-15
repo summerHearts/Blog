@@ -14,12 +14,10 @@ function lazyloadImg(source) {
     });
     $('img').each(function(index, element) {
         oldsrc = $(element).attr('src');
-	if(stringStartsWith(oldsrc, '.')){
+	if(stringStartsWith(oldsrc, './images')){
 	    oldsrc="/" + oldstr.substr(1);	
-	}else if( (!stringStartsWith(oldsrc, '/') && !stringStartsWith(oldsrc, 'http'))){
-	    oldsrc="/" + oldstr;
 	}
-        if (oldsrc && !stringStartsWith(oldsrc, baseUrl) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
+        if (oldsrc && (!stringStartsWith(oldsrc, baseUrl) || !stringStartsWith(oldsrc, '/')) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
 	    $(element).addClass('hx_lazyimg');
             $(element).attr({
                 src: loading,
