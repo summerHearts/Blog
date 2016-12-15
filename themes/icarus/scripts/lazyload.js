@@ -15,7 +15,7 @@ function lazyloadImg(source) {
     $('img').each(function(index, element) {
         oldsrc = $(element).attr('src');
 	if(stringStartsWith(oldsrc, './images')){
-	    oldsrc="/" + oldstr.substr(1);	
+	    oldsrc="/" + oldsrc.substr(1);	
 	}
         if (oldsrc && (!stringStartsWith(oldsrc, baseUrl) || !stringStartsWith(oldsrc, '/')) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
 	    $(element).addClass('hx_lazyimg');
