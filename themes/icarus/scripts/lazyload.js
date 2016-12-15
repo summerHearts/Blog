@@ -1,7 +1,7 @@
 'use strict';
 var cheerio = require('cheerio');
 var cdnUrl = "http://blogstatic.ccsyue.com";
-var baseUrl = 'http://blog.ccsyue.com';
+var baseUrl = '/';
 var loading = "/images/loading.gif";
 var oldsrc = '';
 
