@@ -1,7 +1,7 @@
 'use strict';
 var cheerio = require('cheerio');
 var cdnUrl = "http://blogstatic.ccsyue.com";
-var baseUrl = '/';
+var baseUrl = 'http://';
 var loading = "/images/loading.gif";
 var oldsrc = '';
 
@@ -14,8 +14,13 @@ function lazyloadImg(source) {
     });
     $('img').each(function(index, element) {
         oldsrc = $(element).attr('src');
+	if(stringStartsWith(oldsrc, '.')){
+	    oldsrc="/" + oldstr.substr(1);	
+	}else if( (!stringStartsWith(oldsrc, '/') && !stringStartsWith(oldsrc, 'http'))){
+	    oldsrc="/" + oldstr;
+	}
         if (oldsrc && !stringStartsWith(oldsrc, baseUrl) && !$(element).hasClass('hx_lazyimg') && !$(element).hasClass('skip')) {
-            $(element).addClass('hx_lazyimg');
+	    $(element).addClass('hx_lazyimg');
             $(element).attr({
                 src: loading,
                 'data-original': cdnUrl + oldsrc +"-Watermark"
