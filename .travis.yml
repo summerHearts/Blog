@@ -3,16 +3,16 @@ node_js: stable
 
 # S: Build Lifecycle
 install:
-#  - npm install -g hexo
   - npm install
   - npm install -S hexo-generator-json-content
 
 
 #before_script:
- # - npm install -g gulp
+  - npm install -g gulp
 
 script:
   - hexo generate
+  - gulp
 after_script:
   - mkdir ./public/post_images
   - mv -f ./source/_posts/images/* ./public/post_images/ 
