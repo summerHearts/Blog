@@ -30,7 +30,7 @@ function lazyloadImg(source) {
      	$('link').each(function(index, element) {
 		oldsrc = $(element).attr('href');
 		if(oldsrc && stringStartsWith(oldsrc, '/')){
-		    oldsrc= "cdnUrl" + oldsrc;	
+		    oldsrc= cdnUrl + oldsrc;	
 		    $(element).attr('href',oldsrc);
 		}
 	        
@@ -39,7 +39,7 @@ function lazyloadImg(source) {
 	$('script').each(function(index, element) {
 		oldsrc = $(element).attr('src');
 		if(oldsrc && stringStartsWith(oldsrc, '/')){
-		    oldsrc= "cdnUrl" + oldsrc;
+		    oldsrc= cdnUrl + oldsrc;
 		    $(element).attr('src',oldsrc);
 		}
 		
