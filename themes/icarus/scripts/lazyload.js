@@ -27,7 +27,7 @@ function lazyloadImg(source) {
         }
     });
 	
-     	<!--$('link').each(function(index, element) {
+     	/*$('link').each(function(index, element) {
 		oldsrc = $(element).attr('href');
 		if(oldsrc && stringStartsWith(oldsrc, '/')){
 		    oldsrc= cdnUrl + oldsrc;	
@@ -43,7 +43,7 @@ function lazyloadImg(source) {
 		    $(element).attr('src',oldsrc);
 		}
 		
-    	});-->
+    	});*/
     return $.html();
 }
 hexo.extend.filter.register('after_render:html', lazyloadImg);
