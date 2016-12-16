@@ -26,7 +26,7 @@ function lazyloadImg(source) {
 			
         }
     });
-	$('script').each(function(index, element) {
+	<!--$('script').each(function(index, element) {
 		oldsrc = $(element).attr('src');
 		if(stringStartsWith(oldsrc, '/vender')){
 			$(element).attr({src: cdnUrl+oldsrc});
@@ -37,7 +37,7 @@ function lazyloadImg(source) {
 		if(stringStartsWith(oldsrc, '/vender')){
 			$(element).attr({href: cdnUrl+oldsrc});
 		}
-	});
+	});-->
 
     return $.html();
 }
