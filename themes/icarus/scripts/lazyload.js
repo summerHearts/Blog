@@ -27,7 +27,21 @@ function lazyloadImg(source) {
         }
     });
 	
-
+     	$('link').each(function(index, element) {
+		oldsrc = $(element).attr('href');
+		if(stringStartsWith(oldsrc, '/')){
+		    oldsrc= "cdnUrl" + oldsrc;	
+		}
+	        $(element).attr('href',oldsrc);
+    	});
+	
+	$('script').each(function(index, element) {
+		oldsrc = $(element).attr('src');
+		if(stringStartsWith(oldsrc, '/')){
+		    oldsrc= "cdnUrl" + oldsrc;	
+		}
+		$(element).attr('src',oldsrc);
+    	});
     return $.html();
 }
 hexo.extend.filter.register('after_render:html', lazyloadImg);
