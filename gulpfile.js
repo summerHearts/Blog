@@ -30,7 +30,7 @@ gulp.task('minify-js', function() {
 });
 //图片压缩
 gulp.task('minify-images', function() {
-    gulp.src('./public/*mages/*.*')
+    gulp.src('./public/post_images/*.*')
         .pipe(imagemin({
             progressive: false
         }))
