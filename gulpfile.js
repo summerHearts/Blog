@@ -27,7 +27,15 @@ gulp.task('minify-js', function() {
   .pipe(uglify())
   .pipe(gulp.dest('./public'));
 });
+//图片压缩
+gulp.task('minify-images', function() {
+    gulp.src('./public/*mages/*.*')
+        .pipe(imagemin({
+            progressive: false
+        }))
+        .pipe(gulp.dest('./public'));
+});
 // 默认任务
 gulp.task('default', [
-  'minify-html','minify-css','minify-js'
+  'minify-html','minify-css','minify-js','minify-images'
 ]);
