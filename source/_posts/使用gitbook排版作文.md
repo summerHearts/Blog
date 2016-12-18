@@ -1,8 +1,8 @@
 ---
 title: 使用gitbook排版作文
 date: 2016-12-13 17:54:53
-tags: gitbook样式
-category: gitbook笔记
+tags: gitbook
+category: 信息技术
 ---
 
 > 插件帮不上啥忙，还得改源代码。需求格式：
