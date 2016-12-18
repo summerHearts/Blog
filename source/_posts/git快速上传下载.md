@@ -1,7 +1,7 @@
 ---
 title: git快速上传下载
 date: 2016-12-17 0:8:29
-tags: git学习
+tags: git
 category: 信息技术
 ---
 
