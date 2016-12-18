@@ -26,8 +26,8 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: favicon.ico
     social_links:
-        github: https://github.com/deffyc
-        rss: 
+        #github: https://github.com/deffyc
+        #rss: 
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
@@ -41,7 +41,7 @@ widgets:
 # Search
 search:
     insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-    swiftype: # enter swiftype install key here
+    swiftype: false # enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
 # Comment
