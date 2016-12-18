@@ -2,7 +2,7 @@
 title: git快速上传下载
 date: 2016-12-17 0:8:29
 tags: git学习
-category: git笔记
+category: 信息技术
 ---
 
 # 前提
