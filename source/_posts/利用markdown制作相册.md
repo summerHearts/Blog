@@ -1,8 +1,8 @@
 ---
 title: 利用markdown制作相册
 date: 2016-12-16 23:37:20
-tags: markdwon技巧
-category: markdwon
+tags: markdwon
+category: 信息技术
 ---
 
 windows平台下得使用excel。
