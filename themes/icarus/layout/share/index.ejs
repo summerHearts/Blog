@@ -9,6 +9,6 @@
     <%- partial('addtoany') %>
 <% } %>
 </div>
-<% if (!theme.share || theme.share === 'default') { %>
+<% if (theme.share === 'default') { %>
     <%- partial('default', { post: post }) %>
 <% } %>
