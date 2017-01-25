@@ -8,6 +8,7 @@ category: meteor
 # 1. 安装
 若
 ```
+//ps:1.4.2 linux：http://blogstatic.ccsyue.com/meteor.install.sh | sh
 curl https://install.meteor.com/ | sh
 //分两步
 curl https://install.meteor.com/ > meteor.install.sh
