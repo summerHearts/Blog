@@ -22,8 +22,9 @@ http://blogstatic.ccsyue.com/packages-bootstrap/${RELEASE}/meteor-bootstrap-${PL
 meteor npm config set registry http://registry.npm.taobao.org/
 ```
 
-# 3. vs code 安装
+# 3. IDE 安装
 
 https://code.visualstudio.com/
+https://atom.io/
 
 
