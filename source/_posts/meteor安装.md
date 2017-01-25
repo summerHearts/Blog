@@ -27,5 +27,11 @@ meteor npm config set registry http://registry.npm.taobao.org/
 
 https://code.visualstudio.com/
 https://atom.io/
+c9
 
+# 4. meteor不能在root下运行
+无法欺骗meteor：修改/etc/passwd,/etc/shadow下的第一个root字符串为自定义用户名
+adduser 用户名
+若添加了用户名记得修改 /etc/sudoers 
+或者 ：usermod -aG sudo 用户名
 
