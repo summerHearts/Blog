@@ -13,6 +13,9 @@ curl https://install.meteor.com/ | sh
 curl https://install.meteor.com/ > meteor.install.sh
 //修改135行左右软件包地址为：
 TARBALL_URL="https://d3sqy0vbqsdhku.cloudfront.net/packages-bootstrap/${RELEASE}/meteor-bootstrap-${PLATFORM}.tar.gz"
+//ps:最新版已下载至 http://blogstatic.ccsyue.com/packages-bootstrap/1.4.2.3/meteor-bootstrap-os.linux.x86_64.tar.gz
+
+http://blogstatic.ccsyue.com/packages-bootstrap/${RELEASE}/meteor-bootstrap-${PLATFORM}.tar.gz
 ```
 # 2. npm镜像替换
 ```
