@@ -2,7 +2,7 @@
 title: meteor安装
 date: 2017-1-25 2:40:7
 tags: meteor
-category: meteor
+category: 信息技术
 ---
 
 # 1. 安装
