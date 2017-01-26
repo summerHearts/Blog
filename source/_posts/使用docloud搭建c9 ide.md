@@ -15,21 +15,16 @@ Coding webide 的社区版docker，没弄成功。。。。
 |--------|-----------------------------------------------|----------------------------------------------------------------------|
 | 端口     | 3000->3000,8080->80                           | 3000端口用来跑meteor应用，8080端口来启动c9（80端口得用sudo，这样c9中的终端就是root，不利于meteor开发） |
 | volumn | /home/c9/workspace->/home/rootadmin/workspace | docker默认会创建用户：c9 ，密码：rules，而/home/rootadmin/workspace是宿主机的工作目录       |
-| 环境变量：  | $user->c9,$pass->rules                        | 给编辑器的验证用的，和docker的用户名，密码是两码事。                                        |
+| 环境变量：  | $user->c9,$pass->rules,$LC_ALL->C        | 去本地化                                       |
 
 # docker设置
 1. 访问宿主机域名即可访问webide，使用环境变量$user,$pass登录。
-2. 在/home/c9/.bashrc 添加：
-```
-//去本地化设置
-export LC_ALL=C
-```
 之后： source /home/c9/.bashrc 生效
-3.接下来生成SSH keys，添加到github或coding或码云中。
-4.开启编辑之旅吧。记得github中的c9/core 安装于/home/c9/c9sdk目录下
+2.接下来生成SSH keys，添加到github或coding或码云中。
+3.开启编辑之旅吧。记得github中的c9/core 安装于/home/c9/c9sdk目录下
 # 端口的一些探索
 360网站卫士和百度匀加速似乎是不支持非80端口访问宿主机3000端口的。
-而 dnspod 目前测试来看是支持http://域名:端口访问的。因docker proxy 占用了3000端口，nginx反代似乎不能用了。
+而 dnspod 目前测试来看是支持http://域名:端口访问的。因docker proxy 占用了3000端口，nginx反代似乎不能用了，改环境变量里的8080->8080，用nginx反代即可，贴出配置供参考。
 
 nginx websocket反代注意：
 [nginx websocket document][1]
