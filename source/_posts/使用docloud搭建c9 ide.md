@@ -1,9 +1,12 @@
 ---
 title: 使用docloud搭建c9 ide 
 date: 2017-1-26 21:35:43
-tags: cloud9
+tags: webide
 category: 信息技术
 ---
+
+GFW 这道墙让meteor安装变成了一件头疼的事情。如果你有一个可用来安装docker的linux服务器。不如试试docloud来搭建一个WEB IDE
+Coding webide 的社区版docker，没弄成功。。。。
 
 # daocloud 设置
 > 使用镜像：index.docker.io/deffyc/c9:v0.1 ，搜索deffyc/c9.
@@ -26,7 +29,9 @@ export LC_ALL=C
 4.开启编辑之旅吧。记得github中的c9/core 安装于/home/c9/c9sdk目录下
 # 端口的一些探索
 360网站卫士和百度匀加速似乎是不支持非80端口访问宿主机3000端口的。
-而 dnspod 目前测试来看是支持http://域名:端口访问的。因docker proxy 占用了3000端口，nginx反代似乎不能用了。websocket反代注意：
+而 dnspod 目前测试来看是支持http://域名:端口访问的。因docker proxy 占用了3000端口，nginx反代似乎不能用了。
+
+nginx websocket反代注意：
 [nginx websocket document][1]
 ···
 http {
