@@ -28,24 +28,43 @@ Coding webide 的社区版docker，没弄成功。。。。
 
 nginx websocket反代注意：
 [nginx websocket document][1]
-···
-http {
-    map $http_upgrade $connection_upgrade {
-        default upgrade;
-        ''      close;
-    }
 
-    server {
-        ...
-
-        location /chat/ {
-            proxy_pass http://backend;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection $connection_upgrade;
-        }
+``` xml?linenums
+http
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    '' close;
+}             
+upstream c9 { 
+    server 172.17.0.2:8080;
+}
+server {
+    listen 80;
+    server_name c.ccsyue.com;
+    location / {
+        proxy_pass http://c9;
+        proxy_http_version 1.1; 
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
+    } 
+	
+upstream meteor {
+    server 127.0.0.1:3000;
+}
+server {
+    listen 80;
+    server_name m.ccsyue.com;
+    location / {
+        proxy_pass http://meteor;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection $connection_upgrade;
     }
-···
+}
+
+}
+```
+
 
 
   [1]: http://nginx.org/en/docs/http/websocket.html
