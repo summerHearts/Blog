@@ -10,4 +10,5 @@ category: 信息技术
 中文文档：http://www.pyspider.cn/
 项目：https://github.com/binux/pyspider
 demo：http://demo.pyspider.org/
+个人博客：https://binux.blog/
 
