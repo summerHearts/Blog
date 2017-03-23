@@ -47,7 +47,7 @@ search:
 # Comment
 comment:
     disqus: # enter disqus shortname here
-    duoshuo: freeinhere # enter duoshuo shortname here
+    duoshuo: #freeinhere # enter duoshuo shortname here
     youyan: # enter youyan uid here
     gentie: 6bc2db4c8b27486baf310555aca02ded # enter wangyi gentie productkey here
 
