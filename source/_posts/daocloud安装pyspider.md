@@ -73,7 +73,7 @@ webui:
   command: --taskdb "mysql+taskdb://root:deffyc126@pymysql/taskdb"  --projectdb "mysql+projectdb://root:deffyc126@pymysql/projectdb"
     --resultdb "mysql+resultdb://root:deffyc126@pymysql/resultdb" --message-queue
     "redis://pyredis:6379/1" webui --max-rate 0.2 --max-burst 3 --scheduler-rpc "http://scheduler:23333/"
-    --fetcher-rpc "http://fetcher:24444/" --username "deffyc" --password "deffyc126"
+    --fetcher-rpc "http://fetcher/" --username "deffyc" --password "deffyc126"
     --need-auth
   cpu_shares: 512
   environment:
