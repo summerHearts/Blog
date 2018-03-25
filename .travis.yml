@@ -5,6 +5,7 @@ node_js: stable
 install:
   - npm install
   - npm install -S hexo-generator-json-content
+  - npm install -S hexo-renderer-markdown-it
 
 
 #before_script:
